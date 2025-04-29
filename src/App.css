@@ -1,0 +1,303 @@
+/* App.css */
+header {
+  background-color: #2c3e50;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #f39c12;
+  text-decoration: none;
+}
+
+header .favorites-link {
+  color: #f39c12;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+header .favorites-link:hover {
+  color: #e67e22;
+}
+
+/* App.css */
+.favorites-page {
+  padding: 2rem;
+  text-align: center;
+}
+
+.favorites-empty {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 2rem;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 2px solid #34495e;
+}
+
+.movie-details {
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.movie-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.movie-details p {
+  font-size: 1rem;
+  color: #ecf0f1;
+}
+
+.view-details {
+  font-size: 1rem;
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.view-details:hover {
+  color: #e67e22;
+}
+
+/* App.css */
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-poster {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 2px solid #34495e;
+}
+
+.movie-details {
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.movie-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #f39c12;
+  margin-bottom: 0.5rem;
+}
+
+.movie-details p {
+  font-size: 1rem;
+  color: #ecf0f1;
+}
+
+.movie-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.view-details {
+  font-size: 1rem;
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.view-details:hover {
+  color: #e67e22;
+}
+
+.favorite-btn {
+  padding: 0.5rem;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-btn:hover {
+  background-color: #e67e22;
+}
+
+.favorite-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* App.css */
+
+.search-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.search-bar input:focus {
+  border-color: #f39c12;
+}
+
+.search-bar .dropdown {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+
+.search-bar .dropdown:hover {
+  border-color: #f39c12;
+}
+
+.search-bar .submit-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar .submit-btn:hover {
+  background-color: #e67e22;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:hover {
+  background-color: #e67e22;
+}
+
+.pagination span {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* App.css */
+.search-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
