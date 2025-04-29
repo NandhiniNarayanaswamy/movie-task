@@ -28,5 +28,5 @@ A full-featured **React** application that allows users to search for movies, vi
 
 ---
 
-## 🗂️ Project Structure
+
 
